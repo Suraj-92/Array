@@ -13,14 +13,14 @@ do
       rev=$( echo ${rev}${sd} ) 
 done
  
-if [ $on -eq $rev ];
+if [ $n -eq $rev ];
 then
-  echo "Number is palindrome"
+  echo "Number is palindrome" ${rev[@]}
 else
   echo "Number is NOT palindrome"
 fi
 }
-for (( n=1; n<=99; n++ ))
+for (( n=1; n<=100; n++ ))
 do
-	myfun $n
+	myfun 
 done
